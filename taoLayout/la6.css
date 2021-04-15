@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+#event button {
+    margin-right: 10px;
+    cursor: pointer; 
+  }
+  
+  
+  a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #2b2b2b;
+  }
+
+  
+#navBar{
+    background-color: rgb(42, 180, 0);
+    height: 60px;
+    display: flex;
+    flex-direction: column; 
+}
+ 
+.navBar--logo--image{
+    width: 100px;
+    height: 30px;
+    background-color: #faafaf;
+    margin: 10px;
+    display: none;
+}
+.navBar--logo--button{
+    width: 100px;
+    height: 30px;
+    background-color: #faafaf;
+    margin: 10px; 
+}
+ 
+.navBar--menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+      
+}
+.avBar--menu--option{  
+    height: 30px;
+    background-color: #ff4f4f;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#container{
+    background-color: blue;
+    border: 5px solid gray;
+    height: 500px;
+}
+.hide{
+    display: none;
+}
+.navBar--info{
+    margin-left: 5px;
+}
+
+@media (min-width: 600px){
+    .navBar--logo--image{
+        display: block;
+    }
+    .navBar--logo--button{
+        display: none;
+    }
+    #navBar{
+        background-color: rgb(42, 180, 0);
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .avBar--menu--option{
+        width: 100px;
+        height: 30px;
+        background-color: #ff4f4f;
+        border-right: 1px solid rgb(255, 255, 255);
+    }
+    .navBar--menu{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 20px 10px; 
+    }
+    .hide2{
+        display: none;
+    }
+    #info{
+        display: flex;
+        margin: 10px; 
+    } 
+    
+}
+
