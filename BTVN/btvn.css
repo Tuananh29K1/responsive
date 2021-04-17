@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.add--link {
+  text-decoration: none;
+  color: currentColor;
+}
+.add--link:hover {
+  color: currentColor;
+}
+.hide--button--delete {
+  display: none;
+}
+/*phần NavBar cho mobile*/
+.navBar--left {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 40px;
+}
+.navBar--left button {
+  margin: 10px;
+  width: 50px;
+  background-color: #e5e7ea;
+}
+.navBar--left img {
+  width: 200px;
+}
+.navBar {
+  height: 60px;
+  background-color: #34465c;
+}
+.navBar--right--menu--mobile {
+  background-color: #ffffff; 
+  width: 250px;
+  height: 100%;
+  padding: 20px 0px 450px 50px;
+  position: fixed;
+  top: 0;
+  display:none;
+  z-index: 1;
+}
+
+.navBar--right--menu--mobile li {
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+  font-size: 16px;
+  color: #464646;
+}
+.hide2 {
+  display: none;
+}
+.navBar--right--menu--mobile li:hover{
+  background-color: #bdbdbd;
+}
+
+/*Phần navBar cho desktop*/
+@media (min-width: 730px) {
+  .navBar {
+    height: 60px;
+    background-color: #34465c;
+    color: #e5e7ea;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+  }
+  .navBar--left {
+    display: block;
+  }
+  .navBar--left {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .navBar--left img {
+    width: 120px;
+  }
+  .navBar--right {
+    margin-right: 10px;
+  }
+  .navBar--right--menu {
+    background: none;
+  }
+  .navBar--right--menu li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 15px 0;
+    /* border-bottom: 6px solid #ffffff; */
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+  }
+  .hide--menu {
+    display: none;
+  }
+  .hide2 {
+    display: block;
+  }
+  .sub-menu{
+    padding: 0;
+    display: none;
+    width: 250px; 
+    background-color: #ffffff;
+    color: #464646;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .sub-menu li{
+    width: 100%;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  .sub-menu li:hover{ 
+    background-color: #bdbdbd;
+  }
+  .item-menu{
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 0px solid #ffffff;
+  }
+}
+/*========phần Container mobile======*/
+.hide--container {
+  display: none;
+}
+.hide--button--filter {
+  display: block;
+}
+.container--content--right--search {
+  display: flex;
+  margin-left: 50px;
+}
+.container--content {
+  background-color: #f3f7fa;
+  padding: 30px;
+}
+.container--content--right--search {
+  margin-left: 0;
+}
+.card--body--content--caption {
+  font-size: 14px;
+}
+.card--body--content--rank i {
+  color: rgb(255, 234, 45);
+}
+.card--body--cost--buy {
+  color: rgb(255, 134, 103);
+  font-size: 20px;
+}
+.card--body--cost--sale {
+  color: rgb(155, 155, 155);
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.card {
+  cursor: pointer;
+}
+/*=====Phần container desktop====*/
+@media (min-width: 1000px) {
+  .container--content {
+    background-color: #f3f7fa;
+    padding: 30px 60px;
+    z-index: -1;
+  }
+  .container--content--right--search {
+    margin-left: 66%;
+  }
+  .h6 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .card--body--content--caption {
+    font-size: 14px;
+  }
+  .card--body--content--rank i {
+    color: rgb(255, 234, 45);
+  }
+  .card--body--cost--buy {
+    color: rgb(255, 134, 103);
+    font-size: 20px;
+  }
+  .card--body--cost--sale {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+    text-decoration: line-through;
+  }
+  .hide--container {
+    display: block;
+  }
+  .hide--button--filter {
+    display: none;
+  }
+  .form-check-label,
+  .form-check-input {
+    cursor: pointer;
+  }
+}
+
+/*====phần footer====*/
+.footer--info {
+  background-color: #464646;
+  margin: auto;
+  text-align: left;
+  padding: 80px 100px 50px 100px;
+}
+.footer--info h4 {
+  font-size: 19px;
+  color: #ffffff;
+}
+.footer--info--text {
+  padding: 0;
+}
+.footer--info--text li {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+}
