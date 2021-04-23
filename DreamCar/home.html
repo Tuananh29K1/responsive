@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+     <script src="./app.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -18,14 +20,16 @@
     <header class="header">
         <div class="header--navBar">
             <div class="header--navBar--logo">
-                <p>DreamCars</p>
+                <a href="">
+                    <p>DreamCars</p>
+                </a>
             </div>
             <div class="header--navBar--menu">
                 <ul>
-                    <li>Search Cars</li>
-                    <li>Buyer Tips</li>
-                    <li>Finance</li>
-                    <li>Sign In</li>
+                    <li><a href=" ">Search Cars</a> </li>
+                    <li><a href=" ">Buyer Tips</a></li>
+                    <li><a href=" ">Finance</a></li>
+                    <li><a href=" ">Sign In</a></li>
                     <li><button>Sign Up</button></li>
                 </ul>
             </div>
@@ -133,10 +137,12 @@
                     <p class="content--item--name">name Car</p>
                 </div>
             </div>
-        </div> <!--End List Items-->
+        </div>
+        <!--End List Items-->
         <div class="content--button">
             <button>VIEW ALL TODAY'S DEALS</button>
-        </div> <!--End Items-->
+        </div>
+        <!--End Items-->
 
 
         <div class="content--tips">
@@ -147,7 +153,7 @@
                     <img src="./img/Rectangle-3.png" alt="Rectangle-4">
                     <p>Our Buyers Check List</p>
                 </div>
-                <div class="content--tips--group--item"> 
+                <div class="content--tips--group--item">
                     <img src="./img/Rectangle-5.png" alt="Rectangle-5">
                     <p>How To Spot Fraud</p>
                 </div>
@@ -159,19 +165,22 @@
             <div class="content--tips--button">
                 <button>SEE ALL OUR GUIDES</button>
             </div>
-        </div> <!--End List Tips-->
-    </div> <!--End Content-->
+        </div>
+        <!--End List Tips-->
+    </div>
+    <!--End Content-->
 
 
     <div class="content--message">
         <h1>Never Miss A Message</h1>
         <p>Join our exclusive list for one off deals and more</p>
         <div class="content--message--form">
-            <input class="inputMessage" type="text" placeholder="Enter your email address.."/>
+            <input class="inputMessage" type="text" placeholder="Enter your email address.." />
             <button class="buttonSubmit" type="submit">Sign Me Up</button>
         </div>
 
-    </div><!--End Message-->   
+    </div>
+    <!--End Message-->
     <footer>
         <div class="footer--navBar">
             <div class="footer--navBar--logo">
@@ -181,13 +190,14 @@
                 <ul>
                     <li>Search Cars</li>
                     <li>Buyer Tips</li>
-                    <li>Finance</li> 
+                    <li>Finance</li>
                 </ul>
             </div>
         </div>
     </footer>
+    
     <script src="./data.js"></script>
-    <script src="./app.js"></script>
+    
 </body>
 
 </html>
